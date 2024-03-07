@@ -18,7 +18,7 @@ jobs:
       run: |
         mvn verify sonar:sonar \
         -Dsonar.projectKey=fisrst-sonar-use-project_java-proj \
-        -Dsonar.organization=fisrst-sonar-use-project \
+        -Dsonar.organization=project-sonar-github_project-new \
         -Dsonar.host.url=https://sonarcloud.io
         
       env:
