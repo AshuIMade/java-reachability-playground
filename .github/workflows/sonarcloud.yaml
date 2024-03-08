@@ -17,8 +17,8 @@ jobs:
     - name: Build with Maven
       run: |
         mvn verify sonar:sonar \
-        -Dsonar.projectKey=project-sonar-github_project-new \
-        -Dsonar.organization=project-sonar-github_project-new \
+        -Dsonar.projectKey=sonar-cloud-analysis-partone_sonar-java-project-partone \
+        -Dsonar.organization=sonar-cloud-analysis-partone \
         -Dsonar.host.url=https://sonarcloud.io
         
       env:
