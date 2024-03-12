@@ -1,8 +1,5 @@
 name: 'JAVA Case study end to end flow'
-on: 
- pull_request:
-    branches:
-      - dev/**
+on: [push]
 
 jobs:
   lint-code:
@@ -37,8 +34,8 @@ jobs:
       - name: Build with Maven
         run: |
           mvn verify sonar:sonar \
-          -Dsonar.projectKey=DevSecOpsTrainingAz_java-reachability-playground \
-          -Dsonar.organization=devsecopstrainingaz \
+          -Dsonar.projectKey=sonar-cloud-analysis-partone_sonar-java-project-partone \
+          -Dsonar.organization=sonar-cloud-analysis-partone \
           -Dsonar.host.url=https://sonarcloud.io
           
         env:
